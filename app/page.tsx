@@ -130,13 +130,17 @@ export default function Home() {
           <a href="#contact">Contact</a>
         </nav>
         <a className="button button-small" href={whatsapp} target="_blank" rel="noreferrer">Get a quote</a>
-        <details className="mobile-menu">
-          <summary aria-label="Open quick navigation">
+        <div className="mobile-menu">
+          <a className="mobile-menu-trigger" href="#mobile-menu" aria-label="Open quick navigation">
             <span />
             <span />
             <span />
-          </summary>
-          <aside aria-label="Quick navigation">
+          </a>
+          <aside id="mobile-menu" aria-label="Quick navigation">
+            <a className="mobile-menu-close" href="#top" aria-label="Close quick navigation">
+              <span />
+              <span />
+            </a>
             <div className="mobile-menu-heading">
               <span>Quick menu</span>
               <small>Explore Dhyanish Marbles</small>
@@ -150,7 +154,7 @@ export default function Home() {
             </nav>
             <a className="button" href={whatsapp} target="_blank" rel="noreferrer">Get a quote</a>
           </aside>
-        </details>
+        </div>
       </header>
 
       <section className="hero" id="top">
