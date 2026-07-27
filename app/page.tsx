@@ -104,12 +104,7 @@ export default function Home() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div className="topbar">
-        <div className="service-ticker" aria-label="Importer, exporter, wholesaler and retailer">
-          <div className="service-ticker-track">
-            <span>Importer · Exporter · Wholesaler · Retailer</span>
-            <span aria-hidden="true">Importer · Exporter · Wholesaler · Retailer</span>
-          </div>
-        </div>
+        <span>Importer · Exporter · Wholesaler · Retailer</span>
         <a href={`tel:+91${phone}`}>Call +91 {phone}</a>
       </div>
 
@@ -130,31 +125,6 @@ export default function Home() {
           <a href="#contact">Contact</a>
         </nav>
         <a className="button button-small" href={whatsapp} target="_blank" rel="noreferrer">Get a quote</a>
-        <div className="mobile-menu">
-          <a className="mobile-menu-trigger" href="#mobile-menu" aria-label="Open quick navigation">
-            <span />
-            <span />
-            <span />
-          </a>
-          <aside id="mobile-menu" aria-label="Quick navigation">
-            <a className="mobile-menu-close" href="#top" aria-label="Close quick navigation">
-              <span />
-              <span />
-            </a>
-            <div className="mobile-menu-heading">
-              <span>Quick menu</span>
-              <small>Explore Dhyanish Marbles</small>
-            </div>
-            <nav>
-              <a href="#top"><span>01</span>Home</a>
-              <a href="#products"><span>02</span>Products</a>
-              <a href="#collections"><span>03</span>Stone library</a>
-              <a href="#about"><span>04</span>About</a>
-              <a href="#contact"><span>05</span>Contact</a>
-            </nav>
-            <a className="button" href={whatsapp} target="_blank" rel="noreferrer">Get a quote</a>
-          </aside>
-        </div>
       </header>
 
       <section className="hero" id="top">
